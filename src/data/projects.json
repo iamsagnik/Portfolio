@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "title": " ",
+    "description": " ",
+    "technologies": [ ],
+    "imageUrl": "./assets/Project_errors/landscape_version.jpg",
+    "imageHint": "web application",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 85,
+    "span": "md:col-span-2 md:row-span-1"
+  },
+  {
+    "id": "2",
+    "title": " ",
+    "description": " ",
+    "technologies": [ ],
+    "imageUrl": "./assets/Project_errors/portrait_version.jpg",
+    "imageHint": "ai technology",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 92,
+    "span": "md:col-span-1 md:row-span-1"
+  },
+  {
+    "id": "3",
+    "title": " ",
+    "description": " ",
+    "technologies": [ ],
+    "imageUrl": "./assets/Project_errors/portrait_version.jpg",
+    "imageHint": "ai technology",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 92,
+    "span": "md:col-span-1 md:row-span-1"
+  },
+  {
+    "id": "4",
+    "title": " ",
+    "description": " ",
+    "technologies": [ ],
+    "imageUrl": "./assets/Project_errors/landscape_version.jpg",
+    "imageHint": "web application",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 85,
+    "span": "md:col-span-2 md:row-span-1"
+  },
+  {
+    "id": "5",
+    "title": " ",
+    "description": " ",
+    "technologies": [ ],
+    "imageUrl": "./assets/Project_errors/landscape_version.jpg",
+    "imageHint": "web application",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 85,
+    "span": "md:col-span-2 md:row-span-1"
+  },
+  {
+    "id": "2",
+    "title": " ",
+    "description": " ",
+    "technologies": [ ],
+    "imageUrl": "./assets/Project_errors/portrait_version.jpg",
+    "imageHint": "ai technology",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 92,
+    "span": "md:col-span-1 md:row-span-1"
+  }
+]

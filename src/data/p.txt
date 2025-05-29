@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "E-commerce Platform Pro",
+    "description": "A full-stack e-commerce platform with features like product listing, cart, checkout, and user authentication. Built for scale and performance.",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL", "Docker"],
+    "imageUrl": "https://placehold.co/800x400.png",
+    "imageHint": "web application",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 85,
+    "span": "md:col-span-2 md:row-span-1"
+  },
+  {
+    "id": "2",
+    "title": "AI Content Generator",
+    "description": "A tool that uses generative AI to create blog post drafts, social media updates, and marketing copy based on user prompts.",
+    "technologies": ["Python", "FastAPI", "OpenAI API", "React", "AWS Lambda"],
+    "imageUrl": "https://placehold.co/400x400.png",
+    "imageHint": "ai technology",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 92,
+    "span": "md:col-span-1 md:row-span-1"
+  },
+  {
+    "id": "3",
+    "title": "Real-time Collab Tool",
+    "description": "A collaborative whiteboard application with real-time updates, drawing tools, and chat functionality for remote teams.",
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Socket.io", "WebRTC"],
+    "imageUrl": "https://placehold.co/400x400.png",
+    "imageHint": "collaboration software",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 78,
+    "span": "md:col-span-1 md:row-span-1"
+  },
+  {
+    "id": "4",
+    "title": "Data Visualization Dashboard",
+    "description": "An interactive dashboard for visualizing complex datasets, featuring various chart types and filtering options.",
+    "technologies": ["D3.js", "React", "Redux", "Node.js"],
+    "imageUrl": "https://placehold.co/800x400.png",
+    "imageHint": "data analytics",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 70,
+    "span": "md:col-span-2 md:row-span-1"
+  },
+  {
+    "id": "5",
+    "title": "Mobile Fitness Tracker",
+    "description": "A cross-platform mobile application for tracking fitness activities, setting goals, and monitoring progress.",
+    "technologies": ["React Native", "Firebase", "Expo", "Apple HealthKit"],
+    "imageUrl": "https://placehold.co/800x400.png",
+    "imageHint": "mobile app",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 65,
+    "span": "md:col-span-2 md:row-span-1"
+  },
+  {
+    "id": "6",
+    "title": "Cloud Orchestration CLI",
+    "description": "A command-line interface tool for managing and automating cloud infrastructure deployments on AWS and GCP.",
+    "technologies": ["Go", "Cobra", "AWS SDK", "Google Cloud SDK"],
+    "imageUrl": "https://placehold.co/400x400.png",
+    "imageHint": "developer tools",
+    "liveLink": "#",
+    "githubLink": "#",
+    "engagementScore": 88,
+    "span": "md:col-span-1 md:row-span-1"
+  }
+]

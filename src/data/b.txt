@@ -1,0 +1,46 @@
+[
+   {
+    "id": "1",
+    "title": "Mastering Tailwind CSS for Modern UIs",
+    "excerpt": "A deep dive into advanced Tailwind CSS techniques, utility-first principles, and how to build responsive and beautiful interfaces efficiently.",
+    "imagePath": "../assets/blog_errors/idea_cat.jpg",
+    "imageHint": "abstract code",
+    "date": "August 5, 2024",
+    "author": "Alex Johnson",
+    "tags": ["Tailwind CSS", "Frontend", "Web Development"],
+    "slug": "mastering-tailwind-css"
+  },
+  {
+    "id": "2",
+    "title": "The Rise of Server Components in Next.js",
+    "excerpt": "Explore the benefits and challenges of React Server Components in Next.js, and how they are reshaping full-stack development.",
+    "imagePath": "https://placehold.co/600x400.png",
+    "imageHint": "server architecture",
+    "date": "July 28, 2024",
+    "author": "Alex Johnson",
+    "tags": ["Next.js", "React", "Server Components"],
+    "slug": "server-components-nextjs"
+  },
+  {
+    "id": "3",
+    "title": "Effective State Management in Complex React Apps",
+    "excerpt": "Comparing popular state management libraries like Redux, Zustand, and Recoil, and providing tips for choosing the right one for your project.",
+    "imagePath": "https://placehold.co/600x400.png",
+    "imageHint": "data flow",
+    "date": "July 15, 2024",
+    "author": "Alex Johnson",
+    "tags": ["React", "State Management", "JavaScript"],
+    "slug": "react-state-management"
+  },
+  {
+    "id": "4",
+    "title": "Building Scalable APIs with Node.js and Express",
+    "excerpt": "Best practices for designing, building, and deploying robust and scalable RESTful APIs using Node.js and the Express framework.",
+    "imagePath": "https://placehold.co/600x400.png",
+    "imageHint": "api development",
+    "date": "June 30, 2024",
+    "author": "Alex Johnson",
+    "tags": ["Node.js", "API", "Backend"],
+    "slug": "scalable-nodejs-apis"
+  }
+]

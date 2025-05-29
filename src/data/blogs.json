@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "title": " ",
+    "excerpt": " ",
+    "imagePath": "./assets/blog_errors/idea_cat.jpg",
+    "imageHint": "abstract code",
+    "date": " ",
+    "author": " ",
+    "tags": [ ],
+    "slug": "mastering-tailwind-css"
+  },
+  {
+    "id": "2",
+    "title": " ",
+    "excerpt": " ",
+    "imagePath": "./assets/blog_errors/idea_dog.jpg",
+    "imageHint": "server architecture",
+    "date": " ",
+    "author": " ",
+    "tags": [ ],
+    "slug": "server-components-nextjs"
+  },
+  {
+    "id": "3",
+    "title": " ",
+    "excerpt": " ",
+    "imagePath": "./assets/blog_errors/idea_panda.jpg",
+    "imageHint": "data flow",
+    "date": " ",
+    "author": " ",
+    "tags": [ ],
+    "slug": "react-state-management"
+  },
+  {
+    "id": "4",
+    "title": " ",
+    "excerpt": " ",
+    "imagePath": "./assets/blog_errors/idea_turtleee.jpg",
+    "imageHint": "API design",
+    "date": " ",
+    "author": " ",
+    "tags": [ ],
+    "slug": "scalable-nodejs-apis"
+  }
+]
