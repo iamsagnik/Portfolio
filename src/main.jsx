@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createHashRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
-import {Bridge, Layout, Home, Error, Projects} from './components'
+import {Bridge, Layout, Home, Error} from './components'
 import App from './App'
 import './index.css'
 

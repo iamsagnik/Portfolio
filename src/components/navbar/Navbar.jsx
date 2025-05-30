@@ -7,16 +7,16 @@ function Navbar() {
         <nav className="px-4 mt-2 py-2 mx-auto bg-[#282828] rounded-4xl ">
           <ul className='flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-x-6 font-bold text-sm sm:text-md text-center'>
             <li>
-              <CustomNav to="#hero">Home</CustomNav>
+              <CustomNav to="/home#hero">Home</CustomNav>
             </li>
             <li>
-              <CustomNav to="#projects">Projects</CustomNav>
+              <CustomNav to="/home#projects">Projects</CustomNav>
             </li>
             <li>
-              <CustomNav to="#about">About</CustomNav>
+              <CustomNav to="/home#about">About</CustomNav>
             </li>
             <li>
-              <CustomNav to="#contact">Contact</CustomNav>
+              <CustomNav to="/home#contact">Contact</CustomNav>
             </li>
           </ul>
         </nav>
