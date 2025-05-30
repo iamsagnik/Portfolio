@@ -10,7 +10,7 @@ function Navbar() {
               <CustomNav to="#/home#hero">Home</CustomNav>
             </li>
             <li>
-              <CustomNav to="#/home#projects">Projects</CustomNav>
+              <CustomNav to="/home/projects">Projects</CustomNav>
             </li>
             <li>
               <CustomNav to="#/home#about">About</CustomNav>
