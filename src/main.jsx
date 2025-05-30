@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
+import { createHashRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
 import {Bridge, Layout, Home, Error} from './components'
 import App from './App'
 import './index.css'
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route index  element={<App />} />
@@ -14,9 +14,9 @@ const router = createBrowserRouter(
       <Route path='error' element={<Error />} />
     </Route>
   ),
-  {
-    basename: "/Portfolio"
-  }
+  // {
+  //   basename: "/Portfolio"
+  // }
 )
 
 createRoot(document.getElementById('root')).render(
