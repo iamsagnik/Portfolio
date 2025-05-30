@@ -6,7 +6,7 @@ function Error() {
       <p className="text-lg text-[#B8B8B8] mt-4">Please check back later!</p>
       <div className="mt-6">
         <a 
-          href="/home" 
+          href="#/home" 
           className="bg-[#FFC000] hover:bg-[#FFC000]/90 text-[#14181f] font-semibold px-6 py-3 rounded-lg transition-colors text-center text-white" 
         >
           Go Back Home

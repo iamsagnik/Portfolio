@@ -124,7 +124,7 @@ const targetRef = useRef(null);
 
           {/* Vertical Line - Desktop Only */}
           {!isMobile && (
-            <div className="relative left-[5px] top-0 bottom-0 w-2 bg-yellow-400/20 rounded-xl mx-8" />
+            <div className="relative left-[5px] top-0 bottom-0 w-2 bg-yellow-400/20 rounded-xl mx-8 h-[80%]" />
           )}
 
           {/* Education Section */}
@@ -231,7 +231,7 @@ const targetRef = useRef(null);
                     Explore all articles and technical deep dives in my blog archive
                   </p>
                   <a
-                    href="#/error"
+                    href="/Portfolio/error"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400 text-neutral-900 rounded-full font-semibold hover:bg-yellow-300 transition-colors duration-200"
                   >
                     <FiArrowRight className="text-lg" />

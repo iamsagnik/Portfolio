@@ -1,21 +1,26 @@
 import {Navbar, Hero, Projects, About, Contact, ClickSpark} from '../index'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 function Home() {
 
   const location = useLocation();
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
-    const routeHash = location.hash.split('#')[2] || '';
-    
-    if (routeHash) {
-      const element = document.getElementById(routeHash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+    if (!hasScrolled) {
+      const hash = location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: "smooth" });
+          }, 300);
+        }
       }
+      setHasScrolled(true);
     }
-  }, [location]);
+  }, [location, hasScrolled]);
 
   return (
       <ClickSpark
