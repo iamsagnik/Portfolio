@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 function CustomNav({ to, children }) {
   const [active, setActive] = useState(false);
-  const sectionId = to.split('#')[1]; // "projects", "about", etc.
+  const sectionId = to.split('#')[1]; 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +15,6 @@ function CustomNav({ to, children }) {
       if (inView) {
         setActive(true);
 
-        // Update the hash in the URL without page reload
         const currentHash = window.location.hash;
         if (currentHash !== `#${sectionId}`) {
           history.replaceState(null, '', `#${sectionId}`);
@@ -26,7 +25,7 @@ function CustomNav({ to, children }) {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // run once on mount
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [sectionId]);
@@ -36,7 +35,7 @@ function CustomNav({ to, children }) {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      history.replaceState(null, '', `#${sectionId}`); // update URL manually on click
+      history.replaceState(null, '', `#${sectionId}`);
     }
   };
 
