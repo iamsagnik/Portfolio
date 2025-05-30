@@ -10,9 +10,7 @@ const router = createHashRouter(
     <Route path='/' element={<Layout/>}>
       <Route index  element={<App />} />
       <Route path='bridge' element={<Bridge />} />
-      <Route path='home' element={<Home />}>
-        <Route path='projects' element={<Projects />} />
-      </Route>
+      <Route path='home' element={<Home />} />
       <Route path='error' element={<Error />} />
     </Route>
   ),
