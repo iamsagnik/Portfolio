@@ -165,7 +165,7 @@ useEffect(() => {
 
       {showButton && (
         <Link 
-        to="#/home" 
+        to="/home" 
         className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50" >
             <button
               className="px-6 py-3 text-white rounded-xl text-3xl font-bold transition hover:scale-105 hover:text-[#F4BB44]"
