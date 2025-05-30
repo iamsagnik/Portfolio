@@ -5,15 +5,6 @@ import {Bridge, Layout, Home, Error} from './components'
 import App from './App'
 import './index.css'
 
-const getBasename = () => {
-  // For GitHub Pages deployment
-  if (window.location.host.includes('github.io')) {
-    return '/Portfolio';
-  }
-  // For local development
-  return '/';
-};
-
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
@@ -23,9 +14,6 @@ const router = createHashRouter(
       <Route path='error' element={<Error />} />
     </Route>
   ),
-  {
-    basename: getBasename()
-  }
 )
 
 createRoot(document.getElementById('root')).render(
