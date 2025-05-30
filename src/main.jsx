@@ -14,9 +14,9 @@ const router = createHashRouter(
       <Route path='error' element={<Error />} />
     </Route>
   ),
-  {
-    basename: "/Portfolio"
-  }
+  // {
+  //   basename: "/Portfolio"
+  // }
 )
 
 createRoot(document.getElementById('root')).render(

@@ -7,9 +7,10 @@ function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    const hash = location.hash;
-    if (hash) {
-      const element = document.querySelector(hash);
+    const routeHash = location.hash.split('#')[2] || '';
+    
+    if (routeHash) {
+      const element = document.getElementById(routeHash);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
