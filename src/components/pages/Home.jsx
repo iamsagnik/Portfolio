@@ -4,23 +4,20 @@ import { useLocation } from 'react-router-dom'
 
 function Home() {
 
-  const location = useLocation();
-  const [hasScrolled, setHasScrolled] = useState(false);
+const location = useLocation();
 
   useEffect(() => {
-    if (!hasScrolled) {
-      const hash = location.hash;
-      if (hash) {
-        const element = document.querySelector(hash);
-        if (element) {
-          setTimeout(() => {
-            element.scrollIntoView({ behavior: "smooth" });
-          }, 300);
-        }
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        // Small timeout to ensure page is rendered
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
       }
-      setHasScrolled(true);
     }
-  }, [location, hasScrolled]);
+  }, [location]);
 
   return (
       <ClickSpark

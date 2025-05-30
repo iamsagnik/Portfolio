@@ -6,16 +6,11 @@ function CustomNav({ to, children }) {
   const location = useLocation();
   const navigate = useNavigate();
   
-  // Extract base path and section ID
-  const [basePath, sectionId] = to.split('#');
-  
+  // Extract section ID (e.g., "hero" from "/home#hero")
+  const sectionId = to.split('#')[1];
+
   // Handle scroll-based active state
   useEffect(() => {
-    if (location.pathname !== basePath) {
-      setActive(false);
-      return;
-    }
-    
     if (!sectionId) return;
     
     const handleScroll = () => {
@@ -35,24 +30,23 @@ function CustomNav({ to, children }) {
     handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [location.pathname, basePath, sectionId]);
+  }, [sectionId, location.hash]);
 
-  // Handle navigation and scrolling
+  // Handle navigation
   const handleClick = (e) => {
     e.preventDefault();
     
-    // Case 1: Already on the target page - scroll to section
-    if (location.pathname === basePath && sectionId) {
+    if (location.pathname === '/home') {
+      // Already on home page - scroll to section
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
-        // Update URL without triggering reload
+        // Update URL hash without reload
         window.history.replaceState(null, '', `#${sectionId}`);
       }
-    }
-    // Case 2: Need to navigate to different page
-    else {
-      navigate(to);
+    } else {
+      // Navigate to home page with hash
+      navigate(`/home#${sectionId}`);
     }
   };
 
