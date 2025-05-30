@@ -13,7 +13,10 @@ const router = createBrowserRouter(
       <Route path='home' element={<Home />} />
       <Route path='error' element={<Error />} />
     </Route>
-  )
+  ),
+  {
+    basename: "/Portfolio"
+  }
 )
 
 createRoot(document.getElementById('root')).render(
