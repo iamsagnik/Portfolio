@@ -17,7 +17,7 @@ function Error() {
 }
 
 const PhotoSection = ({ imagePath }) => (
-  <div className="group relative h-[400px] w-[400px] rounded-2xl overflow-hidden">
+  <div className="group relative h-[400px] w-[80%] md:w-[400px] rounded-2xl overflow-hidden">
     <div 
       className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
       style={{ backgroundImage: `url(${imagePath})` }}
