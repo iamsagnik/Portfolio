@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Github, Linkedin, Twitter, Send, Mail, MapPin } from "lucide-react";
-import {PixelCard} from "../index";
+import {PixelCard} from "../components";
 
 const socialLinks = [
   { Icon: Github, href: "https://github.com/iamsagnik", label: "GitHub", username: "iamsagnik" },

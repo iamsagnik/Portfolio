@@ -1,6 +1,6 @@
 import { ArrowDown, Github, Linkedin } from 'lucide-react';
 import {Link} from 'react-router-dom';
-import {SplitText, InteractiveParticleNetwork} from '../index';
+import {SplitText, InteractiveParticleNetwork} from '../components';
 
 
 function HeroSection() {
@@ -56,12 +56,12 @@ function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button className="bg-[#FFC000] hover:bg-[#FFC000]/90 group text-[#14181f] font-semibold px-6 py-3 rounded-lg transition-colors">
-                <Link href="/home#projects" onClick={handleScrollToProjects} className="flex items-center justify-center">
+                <Link to="#projects" onClick={handleScrollToProjects} className="flex items-center justify-center">
                   View Projects <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
                 </Link>
               </button>
               <button className="border-[#FFC000] border-2 text-[#FFC000] bg-transparent hover:bg-[#FFC000]/10 hover:text-[#F5F5F5] font-semibold px-6 py-3 rounded-lg">
-                <Link href="/home#contact" onClick={handleScrollToContacts}>
+                <Link to="#contact" onClick={handleScrollToContacts}>
                   Get in Touch
                 </Link>
               </button>

@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { FiCode, FiServer, FiTool, FiCpu, FiBookOpen, FiAward, FiArrowRight, FiClock } from 'react-icons/fi';
-import blogs from "../../data/blogs.json";
+import blogs from "../data/blogs.json";
 
 function About() {
 
@@ -23,7 +23,7 @@ const targetRef = useRef(null);
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
   return (
-    <section ref={targetRef} className="relative bg-neutral-900 text-white md:h-[300vh] h-auto">
+    <section id="about" ref={targetRef} className="relative bg-neutral-900 text-white md:h-[300vh] h-auto">
       <div className={`${isMobile ? 'relative h-auto' : 'sticky top-0 h-screen flex items-center overflow-hidden'}`}>
         <motion.div 
           style={{ x: isMobile ? "0%" : x }} 

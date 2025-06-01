@@ -5,8 +5,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --base=/",
+    "build": "vite build --base=/Portfolio/",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist && echo 'u has win the war!'"
