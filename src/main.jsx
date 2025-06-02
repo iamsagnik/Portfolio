@@ -1,8 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createHashRouter, createRoutesFromElements, RouterProvider, Route, Navigate } from 'react-router-dom'
-import {Bridge, Layout} from './components'
-import {Home, Error} from './pages'
+import { createHashRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
+import {Bridge, Layout, Home, Error, Blog} from './components'
 import App from './App'
 import './index.css'
 
@@ -13,7 +12,7 @@ const router = createHashRouter(
       <Route path='bridge' element={<Bridge />} />
       <Route path='home' element={<Home />} />
       <Route path='error' element={<Error />} />
-      <Route path='*' element={<Navigate to="/" replace />} />
+      <Route path='blog' element={<Blog />} />
     </Route>
   ),
 )

@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom";
 import { useCardLayout } from "../../hooks";
 import greetings from "../../data/greetings.json";
 import { useState, useEffect, useRef} from "react";
@@ -16,8 +16,6 @@ function CardGrid() {
   const cardContentsRef = useRef({});
   const revealTimestampsRef = useRef({});
   const [showButton, setShowButton] = useState(false);
-
-  const navigate = useNavigate();
 
   // Generate shadow pattern once per layout
   useEffect(() => {
@@ -166,8 +164,11 @@ useEffect(() => {
       })}
 
       {showButton && (
+        <Link 
+        to="/home#hero" 
+        className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50" >
             <button
-              className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50  px-6 py-3 text-white rounded-xl text-3xl font-bold transition hover:scale-105 hover:text-[#F4BB44]"
+              className="px-6 py-3 text-white rounded-xl text-3xl font-bold transition hover:scale-105 hover:text-[#F4BB44]"
               style={{
                 boxShadow: "0 0 10px #BEBEBE",
                 backgroundColor: "	#282828",
@@ -180,10 +181,10 @@ useEffect(() => {
                 e.currentTarget.style.boxShadow = "0 0 10px #BEBEBE";
                 e.currentTarget.textContent = "Hello !!";
               }}
-              onClick={() => {navigate('/home')}}
-              >
+            >
               Hello !!
             </button>
+        </Link>
       )}
     </div>
   );

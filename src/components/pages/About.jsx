@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { FiCode, FiServer, FiTool, FiCpu, FiBookOpen, FiAward, FiArrowRight, FiClock } from 'react-icons/fi';
-import blogs from "../data/blogs.json";
+import blogs from "../../data/blogs.json";
 
 function About() {
 
@@ -23,7 +23,7 @@ const targetRef = useRef(null);
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
   return (
-    <section id="about" ref={targetRef} className="relative bg-neutral-900 text-white md:h-[300vh] h-auto">
+    <section ref={targetRef} className="relative bg-neutral-900 text-white md:h-[300vh] h-auto">
       <div className={`${isMobile ? 'relative h-auto' : 'sticky top-0 h-screen flex items-center overflow-hidden'}`}>
         <motion.div 
           style={{ x: isMobile ? "0%" : x }} 
@@ -215,7 +215,7 @@ const targetRef = useRef(null);
           {/* Blog Cards */}
           <div className="flex items-center w-full md:w-[50vw] shrink-0 pl-4 pr-4 md:pl-8 md:pr-24">
             <div className={`flex gap-6 w-full pb-4 ${isMobile ? 'overflow-x-auto' : ''}`}>
-              {blogs?.map((blog) => (
+              {blogs?.slice(0, 4).map((blog) => (
                 <div key={blog.id} className="flex-shrink-0 w-[85vw] md:w-[400px]">
                   <BlogCard blog={blog} />
                 </div>
@@ -231,7 +231,7 @@ const targetRef = useRef(null);
                     Explore all articles and technical deep dives in my blog archive
                   </p>
                   <a
-                    href="/Portfolio/#/error"
+                    href="/Portfolio/#/blog"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-400 text-neutral-900 rounded-full font-semibold hover:bg-yellow-300 transition-colors duration-200"
                   >
                     <FiArrowRight className="text-lg" />

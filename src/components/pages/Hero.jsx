@@ -1,6 +1,6 @@
 import { ArrowDown, Github, Linkedin } from 'lucide-react';
 import {Link} from 'react-router-dom';
-import {SplitText, InteractiveParticleNetwork} from '../components';
+import {SplitText, InteractiveParticleNetwork} from '../index';
 
 
 function HeroSection() {
@@ -26,7 +26,7 @@ function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-16">
+    <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-16">
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center ">
           <div className="text-center md:text-left">
@@ -56,12 +56,12 @@ function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button className="bg-[#FFC000] hover:bg-[#FFC000]/90 group text-[#14181f] font-semibold px-6 py-3 rounded-lg transition-colors">
-                <Link to="#projects" onClick={handleScrollToProjects} className="flex items-center justify-center">
+                <Link href="/home#projects" onClick={handleScrollToProjects} className="flex items-center justify-center">
                   View Projects <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
                 </Link>
               </button>
               <button className="border-[#FFC000] border-2 text-[#FFC000] bg-transparent hover:bg-[#FFC000]/10 hover:text-[#F5F5F5] font-semibold px-6 py-3 rounded-lg">
-                <Link to="#contact" onClick={handleScrollToContacts}>
+                <Link href="/home#contact" onClick={handleScrollToContacts}>
                   Get in Touch
                 </Link>
               </button>
