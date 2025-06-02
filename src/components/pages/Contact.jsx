@@ -77,7 +77,7 @@ function Contact() {
                   name="name"
                   value={form.form_name}
                   onChange={handleChange}
-                  placeholder="John Doe"
+                  placeholder="Ha Ha what's up !"
                   className="w-full mt-1 p-2 border border-gray-300 rounded bg-white"
                 />
               </div>
@@ -88,7 +88,7 @@ function Contact() {
                   name="email"
                   value={form.form_email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="Here stands ur info"
                   className="w-full mt-1 p-2 border border-gray-300 rounded bg-white"
                 />
               </div>
