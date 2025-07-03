@@ -60,11 +60,8 @@ const targetRef = useRef(null);
                 <SkillCategory 
                   title="Programming Languages"
                   skills={[
-                    { name: 'C', level: 'Intermediate' },
                     { name: 'C++', level: 'Intermediate' },
-                    { name: 'Java', level: 'Intermediate' },
                     { name: 'Python', level: 'Intermediate' },
-                    { name: 'JavaScript', level: 'Intermediate' }
                   ]}
                   icon={<FiCode />}
                 />
@@ -99,15 +96,13 @@ const targetRef = useRef(null);
                   icon={<FiCpu />}
                 />
 
-                <SkillCategory
+                {/* <SkillCategory
                   title="Tools & Platforms"
                   skills={[
-                    { name: 'Git & GitHub', level: 'Intermediate' },
-                    { name: 'VS Code', level: 'Intermediate' },
-                    { name: 'Jupyter Notebook', level: 'Intermediate' }
+                    { name: 'Git', level: 'Intermediate' },
                   ]}
                   icon={<FiTool />}
-                />
+                /> */}
 
                 <SkillCategory
                   title="Exploring / Familiar With"
@@ -181,7 +176,7 @@ const targetRef = useRef(null);
                     <div className="mt-4 grid grid-cols-2 gap-3">
                       <div className="flex items-center gap-2">
                         <FiAward className="text-yellow-400 shrink-0" />
-                        <span className="text-sm text-neutral-300">Among Top 1000 Students in KIITEE</span>
+                        <span className="text-sm text-neutral-300">Among Top 1000 Students in KIITEE - Current CGPA: 9.51</span>
                       </div>
                     </div>
                   </div>
@@ -207,7 +202,7 @@ const targetRef = useRef(null);
               </p>
               <div className="mt-6 flex justify-center items-center gap-2 text-neutral-400">
                 <FiArrowRight className="animate-pulse" />
-                <span>{isMobile ? 'Swipe to explore' : 'Scroll horizontally to explore'}</span>
+                <span>{isMobile ? 'Swipe to explore' : 'Scroll more to explore'}</span>
               </div>
             </div>
           </div>

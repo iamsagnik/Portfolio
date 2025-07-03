@@ -20,14 +20,23 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className={`bg-zinc-900 p-4 rounded-xl ${project.span}`}
+              className={`bg-zinc-900 p-4 rounded-xl ${project.span} hover:bg-zinc-700 transition-all duration-300`}
             >
-              <img src={project.imageUrl} alt={project.imageHint} className="w-full h-60 object-cover rounded-lg mb-4" />
-              <h3 className="text-xl font-semibold">{project.title}</h3>
+              {project.imageUrl !== '#' && <img src={project.imageUrl} alt={project.imageHint} className="w-full h-60 object-cover rounded-lg mb-4" />}
+              <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+              {project.imageUrl === '#' &&
+                <a 
+                href={project.githubLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-[#FFC000] hover:text-[#FFC000]/90 mb-4">
+                  Github Link
+                </a>
+              }
               <p className="text-sm text-gray-400 mb-2">{project.description}</p>
               <div className="flex flex-wrap gap-2 text-xs text-gray-300">
                 {project.technologies.map((tech, index) => (
-                  <span key={index} className="bg-zinc-700 px-2 py-1 rounded-md">{tech}</span>
+                  <span key={index} className="bg-zinc-800 px-2 py-1 rounded-md">{tech}</span>
                 ))}
               </div>
             </div>
