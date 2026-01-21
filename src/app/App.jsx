@@ -11,7 +11,7 @@ import {
   Home, 
   Error, 
   Blog
-} from './components';
+} from '../components';
 
 const router = createHashRouter(
   createRoutesFromElements(
