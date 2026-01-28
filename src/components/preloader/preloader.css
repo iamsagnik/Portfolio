@@ -1,0 +1,177 @@
+/* ===== RESET ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ===== PRELOADER (PATH) ===== */
+.preloader {
+  position: fixed;
+  inset: 0;
+  padding: 10px;
+  background: red;
+  overflow: hidden;
+}
+
+/* ===== FIELD (GROUND) ===== */
+.field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: yellow;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+/* ===== GRID ===== */
+.grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.grid,
+.card-wrapper {
+  overflow: visible;
+}
+
+/* ===== CARD WRAPPER ===== */
+.card-wrapper {
+  perspective: 2000px;
+}
+
+/* ===== CARD (3D OBJECT) ===== */
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(-5.1px);
+  transition: transform 15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover interaction */
+.card-wrapper:hover .card {
+  transform: translateZ(-5px) rotateX(179.6deg);
+}
+
+.face.front,
+.face.back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+/* Front & back */
+.face.front {
+  background: #e5e5e5;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(5px);
+}
+
+.face.back {
+  background: #9a9a9a;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(180deg) translateZ(5px);
+}
+
+/* ===== SIDES (THICKNESS = 10px) ===== */
+.face.top {
+  top: 0;
+  transform: rotateX(90deg) translateZ(calc(50% - 5px + 0.01px));
+}
+
+.face.bottom {
+  bottom: 0;
+  transform: rotateX(-90deg) translateZ(calc(50% - 5px - 0.01px));
+}
+
+.face.left {
+  left: 0;
+  transform: rotateY(-90deg) translateZ(calc(50% - 5px + 0.01px));
+}
+
+.face.right {
+  right: 0;
+  transform: rotateY(90deg) translateZ(calc(50% - 5px + 0.01px));
+}
+
+.face.top,
+.face.bottom {
+  position: absolute;
+  left: 12px;                       /* ← radius */
+  width: calc(100% - 24px);         /* 2 × radius */
+  height: 10px;                     /* thickness */
+  background: green;
+}
+
+.face.left,
+.face.right {
+  position: absolute;
+  top: 12px;                        /* ← radius */
+  height: calc(100% - 24px);        /* 2 × radius */
+  width: 10px;                      /* thickness */
+  background: pink;
+}
+
+.face.front,
+.face.back {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+}
+
+
+.face.top,
+.face.bottom,
+.face.left,
+.face.right {
+  backface-visibility: visible;
+}
+
+
+.face.top,
+.face.bottom { height: 30px; }
+
+.face.left,
+.face.right { width: 30px; }
+
+.corner {
+  position: absolute;
+  width: 12px;
+  height: calc(100% - 24px);
+  background: inherit;
+  top: 12px;
+  transform-style: preserve-3d;
+}
+
+.corner.tl {
+  left: 0;
+  transform: rotateY(-90deg) translateZ(calc(50% - 5px));
+}
+
+.corner.tr {
+  right: 0;
+  transform: rotateY(90deg) translateZ(calc(50% - 5px));
+}
+
+.corner.bl {
+  left: 0;
+  transform: rotateY(-90deg) translateZ(calc(50% - 5px));
+}
+
+.corner.br {
+  right: 0;
+  transform: rotateY(90deg) translateZ(calc(50% - 5px));
+}
